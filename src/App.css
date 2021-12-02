@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("./pacman_bg.jpg");
+  object-fit: cover;
+  overflow: hidden;
+  font-size: 1rem;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(238, 238, 238);
+  width: 87.7vw;
+  height: 3vw;
+  padding: 0% 0% 0% 2%;
+  margin: 1.5% 0% 0% 5.2%;
+  border-radius: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+.search-btn{
+  padding: 8px 14px;
+  margin-top: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.application-element{
+  font-size: 0.9em;
+  margin-left: 5px;
+  margin-top: 21px;
+  border: none;
+  color: rgb(66, 66, 66);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.start{
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar{
+  border-radius: 2px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  padding: 5px 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+.search-bar:focus{
+  outline: none;
+}
+
+#navigation{
+  margin-left: 30%;
+}
+
+#navigation li{
+  display: inline-block;
+  padding: 0px 5px;
+}
+#navigation li a{
+  color: rgb(75, 75, 75);
+  font-size: 0.8em;
+}
+
+.status-head{
+  border-left: 1px solid black;
+  padding: 4px 0px 4px 25px;
+}
+
+.nav-number-data{
+  color: #ed0295;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.security-btn{
+  padding: 4.9px 25px;
+  background-color: #555555;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filter-data{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 14%;
+  left: 5.2%;
+  padding: 40px 40px;
+  font-size: 0.8em;
+  width: 15%;
+  visibility: hidden;
+  text-align: center;
+  height: 0%;
+  pointer-events: none;
+  background-color: #eee;
+  color: rgb(75, 75, 75);
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.active{
+  top: 17%;
+  visibility: visible;
+  height: 65%;
+  opacity: 1;
+  z-index: 10;
+  transition: 0.3s ease;
+  pointer-events: all;
+}
+.fade{
+  filter: blur(6px);
+  transition: 0.3s;
+  pointer-events: all;
+}
+.remove-fade{
+  transition: 0.3s;
+  pointer-events: all;
+}
+.JSON-list{
+  margin-top: 5%;
+  padding: 4%;
+}
+
+.container-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 7%;
+}
+.container /* normal box */{
+  width: 22vw;
+  height: 19.2vw;
+  position: relative;
+  text-align: center;
+  padding: 9.5% 0% 0% 0%;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  border: none;
+  background-color: rgb(250, 250, 250);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  
+  transition-duration: 0.4s;
+  border-radius: 1px;
+}
+.expand{
+  width: 44.4vw;
+  height: 32.2vw;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+  padding: 6%;
+}
+.collapse{
+  width: 44.4vw;
+  height: 6.2vw;
+  padding-top: 6%;
+  padding-left: 4%;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6em;
+}
+.box-cell-head{
+  font-size: 1em;
+  font-weight: 700;
+  color: #777;
+  font-family: 'Montserrat', sans-serif;
+}
+.box-cell-body{
+  display: flex;
+  flex-direction: row;
+  padding: 22% 0% 0% 25%;
+  color: #ed0295;
+  font-weight: bolder;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+.box-cell-body-unit{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.35em;
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+.box-cell-footer{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #ed0295;
+  font-weight: 600;
+  padding-top: 17%;
+}
+.box-cell-footer-unit{
+  color: #777;
+  padding-top: 1%;
+  font-size: 0.7em;
+  font-weight: 400;
+}
